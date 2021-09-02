@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Pokedex</string>
+    <string name="splash_title">PokeDex :)</string>
+    <string name="splash_subtitle">Preparando o ambiente</string>
+    <string name="details">Detalhes</string>
+    <string name="pokemon_weight">Peso</string>
+    <string name="pokemon_height">Altura</string>
+    <string name="search_for_a_pokemon">Pesquise pelo nome de um pokemon</string>
+</resources>
