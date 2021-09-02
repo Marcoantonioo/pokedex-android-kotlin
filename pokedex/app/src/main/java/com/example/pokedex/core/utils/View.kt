@@ -1,4 +1,4 @@
-package com.example.pokeapiegsys.utils
+package com.example.pokedex.core.utils
 
 import android.view.View
 

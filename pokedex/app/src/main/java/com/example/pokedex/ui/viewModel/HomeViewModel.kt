@@ -1,10 +1,10 @@
-package com.example.pokeapiegsys.ui.viewModel
+package com.example.pokedex.ui.viewModel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.pokeapiegsys.domain.interactor.GetRandomPokemonUseCase
-import com.example.pokeapiegsys.domain.interactor.LoadAllPokemonUseCase
-import com.example.pokeapiegsys.domain.model.Pokemon
+import com.example.pokedex.domain.interactor.GetRandomPokemonUseCase
+import com.example.pokedex.domain.interactor.LoadAllPokemonUseCase
+import com.example.pokedex.domain.model.Pokemon
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

@@ -1,7 +1,7 @@
-package com.example.pokeapiegsys
+package com.example.pokedex
 
 import android.app.Application
-import com.example.pokeapiegsys.di.KoinManager
+import com.example.pokedex.di.KoinManager
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin

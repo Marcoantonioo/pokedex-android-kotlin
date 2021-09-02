@@ -1,9 +1,9 @@
-package com.example.pokeapiegsys.data.dataRepository
+package com.example.pokedex.data.dataRepository
 
-import com.example.pokeapiegsys.data.dataStore.PokemonFactory
-import com.example.pokeapiegsys.domain.model.BaseListResponsePokemon
-import com.example.pokeapiegsys.domain.model.Pokemon
-import com.example.pokeapiegsys.domain.repository.PokemonRepository
+import com.example.pokedex.data.dataStore.PokemonFactory
+import com.example.pokedex.domain.model.BaseListResponsePokemon
+import com.example.pokedex.domain.model.Pokemon
+import com.example.pokedex.domain.repository.PokemonRepository
 
 class PokemonDataRepository(private val factory: PokemonFactory) : PokemonRepository {
     override suspend fun loadAll(limit: Int, offset: Int): BaseListResponsePokemon? {

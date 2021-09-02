@@ -1,7 +1,7 @@
-package com.example.pokeapiegsys.core.service
+package com.example.pokedex.remote.service
 
-import com.example.pokeapiegsys.domain.model.BaseListResponsePokemon
-import com.example.pokeapiegsys.domain.model.BaseDetalhesPokemon
+import com.example.pokedex.domain.model.BaseListResponsePokemon
+import com.example.pokedex.domain.model.BaseDetalhesPokemon
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path

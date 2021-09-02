@@ -1,12 +1,12 @@
-package com.example.pokeapiegsys.data.dataStore
+package com.example.pokedex.data.dataStore
 
-import com.example.pokeapiegsys.core.service.PokemonService
-import com.example.pokeapiegsys.domain.model.BaseListResponsePokemon
-import com.example.pokeapiegsys.domain.model.Pokemon
+import com.example.pokedex.data.dataSource.PokemonRemoteService
+import com.example.pokedex.domain.model.BaseListResponsePokemon
+import com.example.pokedex.domain.model.Pokemon
 import kotlin.random.Random
 
 class PokemonRemoteDataStore(
-    private val pokemonService: PokemonService
+    private val pokemonService: PokemonRemoteService
 ) : PokemonDataStore {
     override suspend fun loadAll(limit: Int, offset: Int): BaseListResponsePokemon? {
         return pokemonService.loadAll(limit, offset)

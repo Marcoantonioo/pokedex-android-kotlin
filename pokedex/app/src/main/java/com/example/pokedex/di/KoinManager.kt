@@ -1,16 +1,16 @@
-package com.example.pokeapiegsys.di
+package com.example.pokedex.di
 
-import com.example.pokeapiegsys.core.RetrofitConfig
-import com.example.pokeapiegsys.core.service.PokemonService
-import com.example.pokeapiegsys.core.service.PokemonServiceImpl
-import com.example.pokeapiegsys.data.dataRepository.PokemonDataRepository
-import com.example.pokeapiegsys.data.dataStore.PokemonCacheDataStore
-import com.example.pokeapiegsys.data.dataStore.PokemonFactory
-import com.example.pokeapiegsys.data.dataStore.PokemonRemoteDataStore
-import com.example.pokeapiegsys.domain.interactor.GetRandomPokemonUseCase
-import com.example.pokeapiegsys.domain.interactor.LoadAllPokemonUseCase
-import com.example.pokeapiegsys.domain.repository.PokemonRepository
-import com.example.pokeapiegsys.ui.viewModel.HomeViewModel
+import com.example.pokedex.core.RetrofitConfig
+import com.example.pokedex.data.dataSource.PokemonRemoteService
+import com.example.pokedex.remote.serviceImpl.PokemonServiceImpl
+import com.example.pokedex.data.dataRepository.PokemonDataRepository
+import com.example.pokedex.data.dataStore.PokemonCacheDataStore
+import com.example.pokedex.data.dataStore.PokemonFactory
+import com.example.pokedex.data.dataStore.PokemonRemoteDataStore
+import com.example.pokedex.domain.interactor.GetRandomPokemonUseCase
+import com.example.pokedex.domain.interactor.LoadAllPokemonUseCase
+import com.example.pokedex.domain.repository.PokemonRepository
+import com.example.pokedex.ui.viewModel.HomeViewModel
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.core.module.Module
 import org.koin.dsl.module
@@ -28,7 +28,7 @@ class KoinManager {
 
         private fun getModuleCore() = module {
             factory { RetrofitConfig.pokemonService() }
-            factory<PokemonService> { PokemonServiceImpl(get()) }
+            factory<PokemonRemoteService> { PokemonServiceImpl(get()) }
         }
 
         private fun getModuleDomain() = module {

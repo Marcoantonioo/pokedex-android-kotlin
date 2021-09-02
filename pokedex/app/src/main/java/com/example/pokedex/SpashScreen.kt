@@ -1,9 +1,10 @@
-package com.example.pokeapiegsys
+package com.example.pokedex
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.pokeapiegsys.ui.screen.activity.HomeActivity
+import com.example.pokeapiegsys.R
+import com.example.pokedex.ui.screen.activity.HomeActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.delay

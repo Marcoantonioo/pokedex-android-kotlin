@@ -1,4 +1,4 @@
-package com.example.pokeapiegsys.domain.model
+package com.example.pokedex.domain.model
 
 class BaseListResponsePokemon(
     val count: Int,

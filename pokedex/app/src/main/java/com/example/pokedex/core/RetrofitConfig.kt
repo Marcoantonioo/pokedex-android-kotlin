@@ -1,6 +1,6 @@
-package com.example.pokeapiegsys.core
+package com.example.pokedex.core
 
-import com.example.pokeapiegsys.core.service.PokemonRetrofitService
+import com.example.pokedex.remote.service.PokemonRetrofitService
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 

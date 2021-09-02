@@ -1,10 +1,12 @@
-package com.example.pokeapiegsys.core.service
+package com.example.pokedex.remote.serviceImpl
 
 import android.util.Log
-import com.example.pokeapiegsys.domain.model.BaseListResponsePokemon
-import com.example.pokeapiegsys.domain.model.BaseDetalhesPokemon
+import com.example.pokedex.domain.model.BaseListResponsePokemon
+import com.example.pokedex.domain.model.BaseDetalhesPokemon
+import com.example.pokedex.remote.service.PokemonRetrofitService
+import com.example.pokedex.data.dataSource.PokemonRemoteService
 
-class PokemonServiceImpl(private val service: PokemonRetrofitService) : PokemonService {
+class PokemonServiceImpl(private val service: PokemonRetrofitService) : PokemonRemoteService {
     override suspend fun loadAll(limit: Int, offset: Int): BaseListResponsePokemon? {
         return try {
             val call = service.loadAllPokemons(limit, offset)

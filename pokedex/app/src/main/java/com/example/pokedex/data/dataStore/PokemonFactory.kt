@@ -1,4 +1,4 @@
-package com.example.pokeapiegsys.data.dataStore
+package com.example.pokedex.data.dataStore
 
 class PokemonFactory(
     private val dataRemote: PokemonRemoteDataStore,

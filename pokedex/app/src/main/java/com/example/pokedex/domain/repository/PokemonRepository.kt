@@ -1,7 +1,7 @@
-package com.example.pokeapiegsys.domain.repository
+package com.example.pokedex.domain.repository
 
-import com.example.pokeapiegsys.domain.model.BaseListResponsePokemon
-import com.example.pokeapiegsys.domain.model.Pokemon
+import com.example.pokedex.domain.model.BaseListResponsePokemon
+import com.example.pokedex.domain.model.Pokemon
 
 interface PokemonRepository {
     suspend fun loadAll(limit: Int, offset: Int): BaseListResponsePokemon?

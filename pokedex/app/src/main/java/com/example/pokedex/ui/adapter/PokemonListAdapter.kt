@@ -1,4 +1,4 @@
-package com.example.pokeapiegsys.ui.adapter
+package com.example.pokedex.ui.adapter
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.pokeapiegsys.R
-import com.example.pokeapiegsys.domain.model.Pokemon
+import com.example.pokedex.domain.model.Pokemon
 
 class PokemonAdapter(
     private val context: Context

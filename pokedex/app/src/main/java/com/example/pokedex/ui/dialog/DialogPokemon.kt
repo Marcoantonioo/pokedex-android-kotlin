@@ -1,4 +1,4 @@
-package com.example.pokeapiegsys.ui.dialog
+package com.example.pokedex.ui.dialog
 
 import android.content.Context
 import android.os.Bundle
@@ -10,7 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.DialogFragment
 import com.bumptech.glide.Glide
 import com.example.pokeapiegsys.R
-import com.example.pokeapiegsys.domain.model.Pokemon
+import com.example.pokedex.domain.model.Pokemon
 
 class DialogPokemon(
     private val mContext: Context,

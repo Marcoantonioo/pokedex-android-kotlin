@@ -1,4 +1,4 @@
-package com.example.pokeapiegsys.ui.screen.fragments
+package com.example.pokedex.ui.screen.fragments
 
 import android.os.Bundle
 import android.text.Editable
@@ -12,13 +12,13 @@ import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pokeapiegsys.R
-import com.example.pokeapiegsys.domain.model.Pokemon
-import com.example.pokeapiegsys.ui.adapter.PokemonAdapter
-import com.example.pokeapiegsys.ui.dialog.DialogPokemon
-import com.example.pokeapiegsys.ui.viewModel.HomeViewModel
-import com.example.pokeapiegsys.ui.viewModel.HomeViewModel.Companion.LIMIT
-import com.example.pokeapiegsys.ui.viewModel.HomeViewModel.Companion.OFFSET
-import com.example.pokeapiegsys.utils.setVisibilidadeVisibleView
+import com.example.pokedex.domain.model.Pokemon
+import com.example.pokedex.ui.adapter.PokemonAdapter
+import com.example.pokedex.ui.dialog.DialogPokemon
+import com.example.pokedex.ui.viewModel.HomeViewModel
+import com.example.pokedex.ui.viewModel.HomeViewModel.Companion.LIMIT
+import com.example.pokedex.ui.viewModel.HomeViewModel.Companion.OFFSET
+import com.example.pokedex.core.utils.setVisibilidadeVisibleView
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HomeFragment : Fragment(), PokemonAdapter.OnItemClickListener {

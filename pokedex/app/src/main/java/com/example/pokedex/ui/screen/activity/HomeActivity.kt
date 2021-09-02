@@ -1,9 +1,9 @@
-package com.example.pokeapiegsys.ui.screen.activity
+package com.example.pokedex.ui.screen.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pokeapiegsys.R
-import com.example.pokeapiegsys.ui.screen.fragments.HomeFragment
+import com.example.pokedex.ui.screen.fragments.HomeFragment
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var fragment: HomeFragment
