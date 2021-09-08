@@ -1,7 +1,7 @@
 package com.example.pokedex.data.dataRepository
 
 import com.example.pokedex.data.dataStore.PokemonFactory
-import com.example.pokedex.domain.model.BaseListResponsePokemon
+import com.example.pokedex.domain.model.baseResponse.BaseListResponsePokemon
 import com.example.pokedex.domain.model.Pokemon
 import com.example.pokedex.domain.repository.PokemonRepository
 
