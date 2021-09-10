@@ -1,5 +1,7 @@
 package com.example.pokedex.domain.model
 
+import com.example.pokedex.domain.model.baseResponse.BaseDetalhesPokemon
+
 data class Pokemon(
     var name: String? = null,
     var url: String? = null,

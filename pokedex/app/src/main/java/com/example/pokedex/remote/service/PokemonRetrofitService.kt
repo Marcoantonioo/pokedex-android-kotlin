@@ -1,7 +1,7 @@
 package com.example.pokedex.remote.service
 
-import com.example.pokedex.domain.model.BaseListResponsePokemon
-import com.example.pokedex.domain.model.BaseDetalhesPokemon
+import com.example.pokedex.domain.model.baseResponse.BaseListResponsePokemon
+import com.example.pokedex.domain.model.baseResponse.BaseDetalhesPokemon
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Path
